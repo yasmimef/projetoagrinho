@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flora Brasileira - Árvores Nativas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paraná Verde | Florestas e Meio Ambiente</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <header>
-        <div class="logo">🍃 FloraBrasilis</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        🌳 Paraná Verde
+    </div>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Riquezas da Nossa Terra</h1>
-            <p>Conheça a imponência e as cores das árvores nativas que dão vida aos biomas do Brasil.</p>
-            <a href="#catalogo" class="btn">Explorar Espécies</a>
+    <nav id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#reportagens">Reportagens</a>
+        <a href="#dados">Dados Ambientais</a>
+    </nav>
+
+    <div class="actions">
+        <button id="darkMode">🌙</button>
+        <button id="mobileBtn">☰</button>
+    </div>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>Protegendo as Florestas do Paraná</h1>
+
+        <p>
+            Notícias, reportagens e monitoramento ambiental sobre as áreas de mata,
+            araucárias e biodiversidade paranaense.
+        </p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Pesquisar notícia...">
         </div>
-    </section>
+    </div>
+</section>
 
-    <main id="catalogo">
-        <h2>Catálogo de Espécies</h2>
-        <p class="subtitle">Descubra e apaixone-se pelo nosso patrimônio botânico natural</p>
-        
-        <div class="grid-arvores">
-            <div class="card" data-tree="ipe">
-                <div class="card-image ipe-img"></div>
-                <div class="card-info">
-                    <h3>Ipê-Amarelo</h3>
-                    <p class="cientifico">Handroanthus albus</p>
-                    <p class="resumo">A deslumbrante florada dourada que coroa o inverno brasileiro e renova as paisagens urbanas e naturais.</p>
-                </div>
+<section class="stats" id="dados">
+
+    <div class="stat-card">
+        <h2>4,5 mi ha</h2>
+        <span>Vegetação Nativa</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>399</h2>
+        <span>Espécies de Árvores</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>28%</h2>
+        <span>Cobertura Florestal</span>
+    </div>
+
+    <div class="stat-card">
+        <h2>500+</h2>
+        <span>Projetos Ambientais</span>
+    </div>
+
+</section>
+
+<section class="featured" id="reportagens">
+
+    <h2>Reportagens Especiais</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b">
+            <div class="card-content">
+                <h3>Araucárias do Paraná</h3>
+                <p>
+                    Conheça a história da árvore símbolo do estado e os desafios para sua preservação.
+                </p>
             </div>
+        </div>
 
-            <div class="card" data-tree="paubrasil">
-                <div class="card-image pau-img"></div>
-                <div class="card-info">
-                    <h3>Pau-Brasil</h3>
-                    <p class="cientifico">Paubrasilia echinata</p>
-                    <p class="resumo">A árvore de importância histórica monumental que batizou nossa nação, famosa por sua madeira de tom brasa.</p>
-                </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+            <div class="card-content">
+                <h3>Matas Ciliares</h3>
+                <p>
+                    Como a recuperação das margens dos rios melhora a qualidade ambiental.
+                </p>
             </div>
+        </div>
 
-            <div class="card" data-tree="jabuticaba">
-                <div class="card-image jabuticaba-img
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1">
+            <div class="card-content">
+                <h3>Monitoramento por Satélite</h3>
+                <p>
+                    Tecnologia ajuda a combater o desmatamento ilegal.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="news-section" id="noticias">
+
+    <div class="section-header">
+        <h2>Últimas Notícias</h2>
+    </div>
+
+    <div id="newsContainer"></div>
+
+</section>
+
+<footer>
+
+    <h3>🌳 Paraná Verde</h3>
+
+    <p>
+        Portal de informações ambientais sobre árvores, florestas e biodiversidade do Paraná.
+    </p>
+
+    <p>© 2026 - Todos os direitos reservados.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
